@@ -30,13 +30,19 @@ description: |
    queries. "best wireless earbuds" is wrong. "best wireless earbuds 2026"
    is correct. Without a date, search engines return stale SEO content that
    may reference discontinued products.
-3. **User needs drive rankings** — rank by fit for THIS user, not by general
+3. **Article prices are NOT live prices.** A review article saying "$45"
+   is just as wrong as your training data. Prices from articles, search
+   snippets, Reddit posts, and YouTube videos are stale the day they're
+   published. The ONLY acceptable price source is a live scrape of the
+   actual retailer product page (Amazon listing, Best Buy page, etc.).
+   If you cannot load the retailer page, say so and provide the link.
+4. **User needs drive rankings** — rank by fit for THIS user, not by general
    consensus. A $50 product that matches their needs beats a $500 product
    that's overkill.
-4. **Sources have tiers** — editorial review sites > community discussion >
+5. **Sources have tiers** — editorial review sites > community discussion >
    affiliate SEO content. Extract facts from all tiers but trust rankings
    only from Tier 1.
-5. **Show, don't just tell** — present results visually on a local website
+6. **Show, don't just tell** — present results visually on a local website
    where the user can browse products and click through to buy.
 
 ## Quick-Start Workflow
@@ -67,7 +73,12 @@ Follow this sequence using web search tools:
 2. **Spec collection** — manufacturer pages for each contender
 3. **Expert reviews** — individual reviews for top 3-4 candidates
 4. **Community validation** — Reddit, forums for ownership experiences
-5. **Price comparison** — 3+ retailers for current pricing in user's region
+5. **Price verification (CRITICAL)** — Discard ALL prices seen in articles
+   and search snippets. Scrape the actual retailer product page (Amazon
+   listing, Best Buy page, etc.) for each product on 2+ retailers. Article
+   prices are stale the day they're published. Only retailer-page prices
+   may appear in your final output. Sanity-check: if a price seems
+   surprisingly low, re-verify on the retailer page.
 
 → See `references/research-methodology.md` § Where to Search, § Search Strategies
 
@@ -102,6 +113,8 @@ Rank 3-5 products by user fit. Include pros, cons, and buy links for each.
    ```
    python3 {this_skill_directory}/scripts/serve.py /tmp/product-research/data.json
    ```
+   If you do not have shell/bash execution available, tell the user to run
+   the command themselves: "Run this in your terminal: `python3 ...`"
 4. Browser opens automatically with the comparison page
 5. Tell user they can click buy links to visit retailers directly
 

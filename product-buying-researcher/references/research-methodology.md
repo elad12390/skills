@@ -136,8 +136,12 @@ you must extract value carefully.
 
 - **Specification comparison tables** — factual data is usually accurate
 - **Feature checklists** — which models have which features
-- **Price ranges** — generally current if recently updated
 - **Product existence** — discovering products you didn't know about
+
+**NOT trustworthy from affiliate blogs: PRICES.** Article prices are stale
+the day they're published. A 2024 article saying "$45" may reflect a launch
+promotion, a different SKU, or a price that changed 6 months ago. NEVER
+use article prices in your output. See § Price Verification below.
 
 ### What to DISTRUST from affiliate blogs
 
@@ -198,9 +202,25 @@ Follow this order for efficient, thorough research:
    Goal: real-world performance data
 4. **Community validation** — check Reddit and forums for ownership experiences.
    Goal: long-term reliability, common complaints
-5. **Price comparison** — check 3+ retailers for current pricing.
-   Goal: best price and availability for user's location
-6. **Final synthesis** — combine all data into recommendation
+5. **Price verification (CRITICAL)** — Discard ALL prices you noted from
+   articles, search snippets, Reddit posts, or YouTube videos during steps
+   1-4. Those prices are stale. Now scrape the actual retailer product page
+   (Amazon listing, Best Buy listing, etc.) for each finalist product on
+   at least 2 retailers. These retailer-page prices are the ONLY prices
+   you may put in your final output.
+
+   **Sanity-check every price.** If a product's price seems surprisingly
+   low (e.g., a 16GB RAM single-board computer at $45 when competitors are
+   $100+), something is wrong. Re-verify on the retailer page. Common
+   causes of wrong prices: article cited a different SKU/variant, a
+   promotional price that expired, a different region's pricing, or a
+   bare-board price without RAM/storage.
+
+   **If a retailer page price differs from an article price by >20%,
+   the retailer page wins. Always.**
+6. **Final synthesis** — combine all data into recommendation. Every price
+   in your output must have come from a retailer page scraped in step 5,
+   not from articles or memory
 
 ### Location-Aware Research
 
