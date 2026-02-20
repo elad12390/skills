@@ -2,7 +2,6 @@
   "name": "product-buying-researcher",
   "version": "0.1.0",
   "description": "Research products for purchase, compare options, and present findings on a locally-hosted comparison website with buy links",
-  "repository": "https://github.com/elad12390/skills",
   "skills": {},
   "permissions": {
     "network": {
