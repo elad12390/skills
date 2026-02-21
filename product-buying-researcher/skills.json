@@ -1,6 +1,6 @@
 {
   "name": "product-buying-researcher",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Research products for purchase using Google Shopping, Amazon, and retailer scraping. Compare options and present findings on a locally-hosted comparison website with buy links. Supports SerpAPI for structured multi-retailer data.",
   "skills": {},
   "permissions": {
