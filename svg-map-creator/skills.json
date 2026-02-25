@@ -1,0 +1,16 @@
+{
+  "name": "svg-map-creator",
+  "version": "0.1.0",
+  "description": "Create and customize SVG maps using simplemaps.com resources and similar open-source SVG map projects. Color countries/regions, build choropleth visualizations, add legends and labels.",
+  "skills": {},
+  "permissions": {
+    "network": {
+      "outbound": ["simplemaps.com", "raw.githubusercontent.com"]
+    },
+    "filesystem": {
+      "read": ["assets/*", "scripts/*", "references/*"],
+      "write": ["/tmp/svg-maps/*"]
+    },
+    "subprocess": true
+  }
+}
